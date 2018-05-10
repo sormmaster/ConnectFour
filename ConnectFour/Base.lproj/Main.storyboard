@@ -332,8 +332,8 @@
                                         <nil key="textColor"/>
                                         <nil key="highlightedColor"/>
                                     </label>
-                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="0" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96M-z1-WAG">
-                                        <rect key="frame" x="172" y="96" width="11" height="21"/>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="00" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="96M-z1-WAG">
+                                        <rect key="frame" x="172" y="96" width="24" height="21"/>
                                         <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                         <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                         <nil key="textColor"/>
@@ -345,30 +345,51 @@
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfa-B1-9fD">
                                                 <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
                                                 <state key="normal" title="[+]"/>
+                                                <connections>
+                                                    <action selector="col0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BjP-Uo-YSd"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuf-x9-hze">
                                                 <rect key="frame" x="52" y="0.0" width="42.5" height="30"/>
                                                 <state key="normal" title="[+]"/>
+                                                <connections>
+                                                    <action selector="col1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5zT-vm-F7Y"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQL-vq-FK7">
                                                 <rect key="frame" x="104.5" y="0.0" width="42" height="30"/>
                                                 <state key="normal" title="[+]"/>
+                                                <connections>
+                                                    <action selector="col2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LTP-jg-Tk5"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHa-Mh-Fkf">
                                                 <rect key="frame" x="156.5" y="0.0" width="42" height="30"/>
                                                 <state key="normal" title="[+]"/>
+                                                <connections>
+                                                    <action selector="col3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxA-Cm-6p4"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dU-jA-TKs">
                                                 <rect key="frame" x="208.5" y="0.0" width="42" height="30"/>
                                                 <state key="normal" title="[+]"/>
+                                                <connections>
+                                                    <action selector="col4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TI8-A3-WWw"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25y-ga-x8w">
                                                 <rect key="frame" x="260.5" y="0.0" width="42.5" height="30"/>
                                                 <state key="normal" title="[+]"/>
+                                                <connections>
+                                                    <action selector="col5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BpJ-bK-Jwf"/>
+                                                </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7g-zU-tR5">
                                                 <rect key="frame" x="313" y="0.0" width="42" height="30"/>
                                                 <state key="normal" title="[+]"/>
+                                                <connections>
+                                                    <action selector="col6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lT7-oD-2xf"/>
+                                                </connections>
                                             </button>
                                         </subviews>
                                     </stackView>
@@ -428,7 +449,19 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outletCollection property="placers" destination="MQL-vq-FK7" collectionClass="NSMutableArray" id="XTy-bO-TE9"/>
+                        <outlet property="colm0" destination="Rfa-B1-9fD" id="bVG-dH-5Zb"/>
+                        <outlet property="colm1" destination="Cuf-x9-hze" id="1pN-2V-m5Z"/>
+                        <outlet property="colm2" destination="MQL-vq-FK7" id="VWG-RL-Gqz"/>
+                        <outlet property="colm4" destination="UHa-Mh-Fkf" id="R0o-8b-Bvv"/>
+                        <outlet property="colm5" destination="5dU-jA-TKs" id="cNU-Ia-8tj"/>
+                        <outlet property="colm6" destination="25y-ga-x8w" id="A4m-iB-Xge"/>
+                        <outlet property="colm7" destination="p7g-zU-tR5" id="Xfg-fQ-tXi"/>
+                        <outlet property="gameCounter" destination="96M-z1-WAG" id="TVL-sS-t2L"/>
+                        <outlet property="loseGreen" destination="zdx-JL-O0i" id="saG-3D-BqG"/>
+                        <outlet property="loseRed" destination="sw3-b9-oVe" id="gGf-UC-ZP2"/>
+                        <outlet property="turnShower" destination="Tq8-77-nrx" id="Mi4-Nq-ld3"/>
+                        <outlet property="winGreen" destination="MWB-va-hO9" id="LcJ-Tn-tFR"/>
+                        <outlet property="winRed" destination="a5p-MW-Hiz" id="o9f-Vh-dkL"/>
                         <outletCollection property="coins" destination="oHL-am-iHO" collectionClass="NSMutableArray" id="iB8-uh-QDw"/>
                         <outletCollection property="coins" destination="r4y-8b-X6W" collectionClass="NSMutableArray" id="pqE-xx-7yc"/>
                         <outletCollection property="coins" destination="lpL-RQ-hnl" collectionClass="NSMutableArray" id="8fB-DH-gAw"/>
