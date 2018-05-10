@@ -313,7 +313,7 @@ class MainViewController: UIViewController {
     if(turn == "red"){
         turn = "green"
         turnShower.image = #imageLiteral(resourceName: "DQmSz68gJwYfsnnfLbjgeHABETm9QF4gnwkfKLTVwwn8SCg_1680x8400.png")
-        colorSwap(color: .green)
+        colorSwap(color: #colorLiteral(red: 0, green: 0.3411764706, blue: 0, alpha: 1))
     }else{
         turn = "red"
         turnShower.image = #imageLiteral(resourceName: "rc.png")
