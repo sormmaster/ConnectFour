@@ -8,7 +8,7 @@
 
 import UIKit
 
-class MainViewController: UINavigationController {
+class MainViewController: UIViewController {
 
     @IBOutlet var coins: [UIImageView]!
     var turn: String = "none"
@@ -60,15 +60,18 @@ class MainViewController: UINavigationController {
     
     func flip(coin: UIImageView){
         if(turn == "red"){
-            
+            coin.image = #imageLiteral(resourceName: "rc.png")
         }else{
-            
+            coin.image = #imageLiteral(resourceName: "DQmSz68gJwYfsnnfLbjgeHABETm9QF4gnwkfKLTVwwn8SCg_1680x8400.png")
         }
     }
     
     @IBAction func NewGAme(_ sender: Any) {
         turn = "red"
         winner = false
-        flip(coin: coins[1])
+        for coin in coins{
+            flip(coin: coin)
+        }
+        //flip(coin: coins[0])
     }
 }

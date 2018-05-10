@@ -428,8 +428,56 @@
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
                     <connections>
-                        <outletCollection property="coins" destination="Iso-rq-JOJ" collectionClass="NSMutableArray" id="b38-cq-imH"/>
                         <outletCollection property="placers" destination="MQL-vq-FK7" collectionClass="NSMutableArray" id="XTy-bO-TE9"/>
+                        <outletCollection property="coins" destination="oHL-am-iHO" collectionClass="NSMutableArray" id="iB8-uh-QDw"/>
+                        <outletCollection property="coins" destination="r4y-8b-X6W" collectionClass="NSMutableArray" id="pqE-xx-7yc"/>
+                        <outletCollection property="coins" destination="lpL-RQ-hnl" collectionClass="NSMutableArray" id="8fB-DH-gAw"/>
+                        <outletCollection property="coins" destination="cLW-dS-JsF" collectionClass="NSMutableArray" id="doS-Es-LGT"/>
+                        <outletCollection property="coins" destination="fpH-xf-yzD" collectionClass="NSMutableArray" id="A6U-BT-GkV"/>
+                        <outletCollection property="coins" destination="QZF-HV-djJ" collectionClass="NSMutableArray" id="x64-Vr-n86"/>
+                        <outletCollection property="coins" destination="7Pq-41-VGM" collectionClass="NSMutableArray" id="7Bc-wo-y1U"/>
+                        <outletCollection property="coins" destination="E31-gk-4GX" collectionClass="NSMutableArray" id="qk4-sn-8Jr"/>
+                        <outletCollection property="coins" destination="Nna-9T-bqo" collectionClass="NSMutableArray" id="2sf-ct-DH3"/>
+                        <outletCollection property="coins" destination="1vU-2k-kBS" collectionClass="NSMutableArray" id="iuP-yR-ZEt"/>
+                        <outletCollection property="coins" destination="GPt-Xc-SkQ" collectionClass="NSMutableArray" id="FYt-Cg-SND"/>
+                        <outletCollection property="coins" destination="NLQ-d4-AWb" collectionClass="NSMutableArray" id="rrw-d3-QDZ"/>
+                        <outletCollection property="coins" destination="6wD-bb-nDI" collectionClass="NSMutableArray" id="DJx-Mc-zpb"/>
+                        <outletCollection property="coins" destination="IzY-Mo-bYW" collectionClass="NSMutableArray" id="YNy-bm-9XJ"/>
+                        <outletCollection property="coins" destination="rg2-Gj-bS4" collectionClass="NSMutableArray" id="fdm-Ha-c65"/>
+                        <outletCollection property="coins" destination="oav-Nd-swe" collectionClass="NSMutableArray" id="qvb-ah-jiH"/>
+                        <outletCollection property="coins" destination="8g6-Ek-SCZ" collectionClass="NSMutableArray" id="PUZ-Tj-Itl"/>
+                        <outletCollection property="coins" destination="CtX-YQ-ueB" collectionClass="NSMutableArray" id="9YN-ZE-D4C"/>
+                        <outletCollection property="coins" destination="K91-yP-48D" collectionClass="NSMutableArray" id="I0f-BF-wT9"/>
+                        <outletCollection property="coins" destination="89Y-S0-po0" collectionClass="NSMutableArray" id="ozZ-9A-2Ne"/>
+                        <outletCollection property="coins" destination="VsX-ff-g50" collectionClass="NSMutableArray" id="2GO-Sa-hkh"/>
+                        <outletCollection property="coins" destination="wsZ-hq-q2c" collectionClass="NSMutableArray" id="9Zm-nM-jp6"/>
+                        <outletCollection property="coins" destination="bEZ-ZB-34c" collectionClass="NSMutableArray" id="Cmd-Gm-weN"/>
+                        <outletCollection property="coins" destination="Tii-7F-9wD" collectionClass="NSMutableArray" id="NRw-hP-Qsj"/>
+                        <outletCollection property="coins" destination="iFD-MN-C12" collectionClass="NSMutableArray" id="FI1-w2-X0k"/>
+                        <outletCollection property="coins" destination="mdy-7S-iAd" collectionClass="NSMutableArray" id="KCt-Jz-l8l"/>
+                        <outletCollection property="coins" destination="Iso-rq-JOJ" collectionClass="NSMutableArray" id="vTO-Mj-M5u"/>
+                        <outletCollection property="coins" destination="DKi-ow-YAi" collectionClass="NSMutableArray" id="0l2-Qj-bZY"/>
+                        <outletCollection property="coins" destination="paU-tL-EVn" collectionClass="NSMutableArray" id="uLD-kJ-QPO"/>
+                        <outletCollection property="coins" destination="CIZ-zB-fmm" collectionClass="NSMutableArray" id="Egv-Me-ekY"/>
+                        <outletCollection property="coins" destination="aM9-IJ-O9z" collectionClass="NSMutableArray" id="aVN-Cb-FpI"/>
+                        <outletCollection property="coins" destination="at4-w4-yQL" collectionClass="NSMutableArray" id="eIx-r4-L4g"/>
+                        <outletCollection property="coins" destination="mMl-nT-nUO" collectionClass="NSMutableArray" id="guB-m0-olF"/>
+                        <outletCollection property="coins" destination="DHB-3D-HhA" collectionClass="NSMutableArray" id="Bfk-GX-9ga"/>
+                        <outletCollection property="coins" destination="ELq-PP-qt6" collectionClass="NSMutableArray" id="9wV-lg-nug"/>
+                        <outletCollection property="coins" destination="h2M-9R-CYU" collectionClass="NSMutableArray" id="lWw-Cu-Xhf"/>
+                        <outletCollection property="coins" destination="BZK-Gq-90M" collectionClass="NSMutableArray" id="2Qk-UV-ZvC"/>
+                        <outletCollection property="coins" destination="VMQ-nD-fnp" collectionClass="NSMutableArray" id="cZD-Ec-lIP"/>
+                        <outletCollection property="coins" destination="Ulg-B1-wnp" collectionClass="NSMutableArray" id="bBK-3L-ITb"/>
+                        <outletCollection property="coins" destination="ufV-ok-IQe" collectionClass="NSMutableArray" id="kvs-zv-JNv"/>
+                        <outletCollection property="coins" destination="KfR-lp-4Lo" collectionClass="NSMutableArray" id="o1F-SK-uCf"/>
+                        <outletCollection property="coins" destination="FFs-KM-zaJ" collectionClass="NSMutableArray" id="UsN-6V-j9H"/>
+                        <outletCollection property="coins" destination="Lsg-Jx-Jfk" collectionClass="NSMutableArray" id="16p-jZ-Uiq"/>
+                        <outletCollection property="coins" destination="NOh-Et-Ho5" collectionClass="NSMutableArray" id="9iT-hV-BuP"/>
+                        <outletCollection property="coins" destination="yTp-k8-yn0" collectionClass="NSMutableArray" id="tZB-AH-kcv"/>
+                        <outletCollection property="coins" destination="Q63-h0-AQN" collectionClass="NSMutableArray" id="SfP-wb-6sM"/>
+                        <outletCollection property="coins" destination="Kbc-BE-2Js" collectionClass="NSMutableArray" id="mh7-Nk-wsX"/>
+                        <outletCollection property="coins" destination="jYI-k8-f9Z" collectionClass="NSMutableArray" id="ZWV-iU-WqU"/>
+                        <outletCollection property="coins" destination="Uyf-es-id7" collectionClass="NSMutableArray" id="auu-Ou-GRS"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
