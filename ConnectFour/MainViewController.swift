@@ -292,12 +292,18 @@ class MainViewController: UIViewController {
             greenLoss = greenLoss + 1
             winRed.text = String(redWins)
             loseGreen.text = String(greenLoss)
+            let alert = UIAlertController(title: "Winner", message: "Player Red won in \(moveList.count - 1)  moves", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }else{
             winner = true
             redLoss = redLoss + 1
             greenWins = greenWins + 1
             winGreen.text = String(greenWins)
             loseRed.text  = String(redLoss)
+            let alert = UIAlertController(title: "Winner", message: "Player Green won in \(moveList.count - 1)  moves", preferredStyle: UIAlertControllerStyle.alert)
+            alert.addAction(UIAlertAction(title: "Ok", style: UIAlertActionStyle.default, handler: nil))
+            self.present(alert, animated: true, completion: nil)
         }
     }
     
