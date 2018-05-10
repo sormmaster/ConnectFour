@@ -1,15 +1,32 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="8tj-E2-d5b">
     <device id="retina4_7" orientation="portrait">
         <adaptation id="fullscreen"/>
     </device>
     <dependencies>
         <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
+        <!--Navigation Controller-->
+        <scene sceneID="RbW-9q-vck">
+            <objects>
+                <navigationController id="8tj-E2-d5b" sceneMemberID="viewController">
+                    <navigationBar key="navigationBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="P5p-we-Qhw">
+                        <rect key="frame" x="0.0" y="20" width="375" height="44"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                    </navigationBar>
+                    <connections>
+                        <segue destination="BYZ-38-t0r" kind="relationship" relationship="rootViewController" id="8j6-AS-dN4"/>
+                    </connections>
+                </navigationController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="DWc-XT-zgx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-754" y="163"/>
+        </scene>
         <!--Connect Four-->
         <scene sceneID="tne-QT-ifu">
             <objects>
@@ -19,199 +36,199 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="uCQ-b5-E1s">
-                                <rect key="frame" x="0.0" y="150" width="375" height="417"/>
+                                <rect key="frame" x="0.0" y="214" width="375" height="378"/>
                                 <subviews>
                                     <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="v44-U9-QqO">
-                                        <rect key="frame" x="8" y="8" width="359" height="401"/>
+                                        <rect key="frame" x="8" y="8" width="359" height="362"/>
                                         <subviews>
                                             <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="TRu-M2-vgt">
-                                                <rect key="frame" x="0.0" y="0.0" width="359" height="401"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="359" height="362"/>
                                                 <subviews>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="nga-gU-fua">
-                                                        <rect key="frame" x="0.0" y="0.0" width="42.5" height="401"/>
+                                                        <rect key="frame" x="0.0" y="0.0" width="42.5" height="362"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" tag="1" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="oHL-am-iHO">
-                                                                <rect key="frame" x="0.0" y="0.0" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="2" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="r4y-8b-X6W">
-                                                                <rect key="frame" x="0.0" y="58.5" width="42.5" height="49"/>
+                                                                <rect key="frame" x="0.0" y="53" width="42.5" height="43.5"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="3" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="lpL-RQ-hnl">
-                                                                <rect key="frame" x="0.0" y="117.5" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="106.5" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="4" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="cLW-dS-JsF">
-                                                                <rect key="frame" x="0.0" y="176" width="42.5" height="49"/>
+                                                                <rect key="frame" x="0.0" y="159.5" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="5" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="fpH-xf-yzD">
-                                                                <rect key="frame" x="0.0" y="235" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="212.5" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="6" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="QZF-HV-djJ">
-                                                                <rect key="frame" x="0.0" y="293.5" width="42.5" height="49"/>
+                                                                <rect key="frame" x="0.0" y="265.5" width="42.5" height="43.5"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="7" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="7Pq-41-VGM">
-                                                                <rect key="frame" x="0.0" y="352.5" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="319" width="42.5" height="43"/>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="yYw-l5-hLC">
-                                                        <rect key="frame" x="52.5" y="0.0" width="43" height="401"/>
+                                                        <rect key="frame" x="52.5" y="0.0" width="43" height="362"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" tag="8" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="E31-gk-4GX">
-                                                                <rect key="frame" x="0.0" y="0.0" width="43" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="9" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="Nna-9T-bqo">
-                                                                <rect key="frame" x="0.0" y="58.5" width="43" height="49"/>
+                                                                <rect key="frame" x="0.0" y="53" width="43" height="43.5"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="10" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="1vU-2k-kBS">
-                                                                <rect key="frame" x="0.0" y="117.5" width="43" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="106.5" width="43" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="11" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="GPt-Xc-SkQ">
-                                                                <rect key="frame" x="0.0" y="176" width="43" height="49"/>
+                                                                <rect key="frame" x="0.0" y="159.5" width="43" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="12" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="NLQ-d4-AWb">
-                                                                <rect key="frame" x="0.0" y="235" width="43" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="212.5" width="43" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="13" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="6wD-bb-nDI">
-                                                                <rect key="frame" x="0.0" y="293.5" width="43" height="49"/>
+                                                                <rect key="frame" x="0.0" y="265.5" width="43" height="43.5"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="14" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="IzY-Mo-bYW">
-                                                                <rect key="frame" x="0.0" y="352.5" width="43" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="319" width="43" height="43"/>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="raR-Dg-hdG">
-                                                        <rect key="frame" x="105.5" y="0.0" width="42.5" height="401"/>
+                                                        <rect key="frame" x="105.5" y="0.0" width="42.5" height="362"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" tag="15" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="rg2-Gj-bS4">
-                                                                <rect key="frame" x="0.0" y="0.0" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="16" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="oav-Nd-swe">
-                                                                <rect key="frame" x="0.0" y="58.5" width="42.5" height="49"/>
+                                                                <rect key="frame" x="0.0" y="53" width="42.5" height="43.5"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="17" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="8g6-Ek-SCZ">
-                                                                <rect key="frame" x="0.0" y="117.5" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="106.5" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="18" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="CtX-YQ-ueB">
-                                                                <rect key="frame" x="0.0" y="176" width="42.5" height="49"/>
+                                                                <rect key="frame" x="0.0" y="159.5" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="19" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="K91-yP-48D">
-                                                                <rect key="frame" x="0.0" y="235" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="212.5" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="20" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="89Y-S0-po0">
-                                                                <rect key="frame" x="0.0" y="293.5" width="42.5" height="49"/>
+                                                                <rect key="frame" x="0.0" y="265.5" width="42.5" height="43.5"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="21" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="VsX-ff-g50">
-                                                                <rect key="frame" x="0.0" y="352.5" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="319" width="42.5" height="43"/>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="phL-gs-zKv">
-                                                        <rect key="frame" x="158" y="0.0" width="43" height="401"/>
+                                                        <rect key="frame" x="158" y="0.0" width="43" height="362"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" tag="22" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="wsZ-hq-q2c">
-                                                                <rect key="frame" x="0.0" y="0.0" width="43" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="23" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="bEZ-ZB-34c">
-                                                                <rect key="frame" x="0.0" y="58.5" width="43" height="49"/>
+                                                                <rect key="frame" x="0.0" y="53" width="43" height="43.5"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="24" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tii-7F-9wD">
-                                                                <rect key="frame" x="0.0" y="117.5" width="43" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="106.5" width="43" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="25" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="iFD-MN-C12">
-                                                                <rect key="frame" x="0.0" y="176" width="43" height="49"/>
+                                                                <rect key="frame" x="0.0" y="159.5" width="43" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="26" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="mdy-7S-iAd">
-                                                                <rect key="frame" x="0.0" y="235" width="43" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="212.5" width="43" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="27" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="Iso-rq-JOJ">
-                                                                <rect key="frame" x="0.0" y="293.5" width="43" height="49"/>
+                                                                <rect key="frame" x="0.0" y="265.5" width="43" height="43.5"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="28" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="DKi-ow-YAi">
-                                                                <rect key="frame" x="0.0" y="352.5" width="43" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="319" width="43" height="43"/>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="fI9-kp-ver">
-                                                        <rect key="frame" x="211" y="0.0" width="42.5" height="401"/>
+                                                        <rect key="frame" x="211" y="0.0" width="42.5" height="362"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" tag="29" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="paU-tL-EVn">
-                                                                <rect key="frame" x="0.0" y="0.0" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="30" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="CIZ-zB-fmm">
-                                                                <rect key="frame" x="0.0" y="58.5" width="42.5" height="49"/>
+                                                                <rect key="frame" x="0.0" y="53" width="42.5" height="43.5"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="31" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="aM9-IJ-O9z">
-                                                                <rect key="frame" x="0.0" y="117.5" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="106.5" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="32" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="at4-w4-yQL">
-                                                                <rect key="frame" x="0.0" y="176" width="42.5" height="49"/>
+                                                                <rect key="frame" x="0.0" y="159.5" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="33" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="mMl-nT-nUO">
-                                                                <rect key="frame" x="0.0" y="235" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="212.5" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="34" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="DHB-3D-HhA">
-                                                                <rect key="frame" x="0.0" y="293.5" width="42.5" height="49"/>
+                                                                <rect key="frame" x="0.0" y="265.5" width="42.5" height="43.5"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="35" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="ELq-PP-qt6">
-                                                                <rect key="frame" x="0.0" y="352.5" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="319" width="42.5" height="43"/>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="gUe-1h-MYQ">
-                                                        <rect key="frame" x="263.5" y="0.0" width="43" height="401"/>
+                                                        <rect key="frame" x="263.5" y="0.0" width="43" height="362"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" tag="36" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="h2M-9R-CYU">
-                                                                <rect key="frame" x="0.0" y="0.0" width="43" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="43" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="37" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="BZK-Gq-90M">
-                                                                <rect key="frame" x="0.0" y="58.5" width="43" height="49"/>
+                                                                <rect key="frame" x="0.0" y="53" width="43" height="43.5"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="38" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="VMQ-nD-fnp">
-                                                                <rect key="frame" x="0.0" y="117.5" width="43" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="106.5" width="43" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="39" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="Ulg-B1-wnp">
-                                                                <rect key="frame" x="0.0" y="176" width="43" height="49"/>
+                                                                <rect key="frame" x="0.0" y="159.5" width="43" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="40" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="ufV-ok-IQe">
-                                                                <rect key="frame" x="0.0" y="235" width="43" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="212.5" width="43" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="41" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="KfR-lp-4Lo">
-                                                                <rect key="frame" x="0.0" y="293.5" width="43" height="49"/>
+                                                                <rect key="frame" x="0.0" y="265.5" width="43" height="43.5"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="42" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="FFs-KM-zaJ">
-                                                                <rect key="frame" x="0.0" y="352.5" width="43" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="319" width="43" height="43"/>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                     </stackView>
                                                     <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4DG-ol-FMK">
-                                                        <rect key="frame" x="316.5" y="0.0" width="42.5" height="401"/>
+                                                        <rect key="frame" x="316.5" y="0.0" width="42.5" height="362"/>
                                                         <subviews>
                                                             <imageView userInteractionEnabled="NO" tag="43" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="Lsg-Jx-Jfk">
-                                                                <rect key="frame" x="0.0" y="0.0" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="0.0" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="44" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="NOh-Et-Ho5">
-                                                                <rect key="frame" x="0.0" y="58.5" width="42.5" height="49"/>
+                                                                <rect key="frame" x="0.0" y="53" width="42.5" height="43.5"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="45" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="yTp-k8-yn0">
-                                                                <rect key="frame" x="0.0" y="117.5" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="106.5" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="46" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="Q63-h0-AQN">
-                                                                <rect key="frame" x="0.0" y="176" width="42.5" height="49"/>
+                                                                <rect key="frame" x="0.0" y="159.5" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="47" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="Kbc-BE-2Js">
-                                                                <rect key="frame" x="0.0" y="235" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="212.5" width="42.5" height="43"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="48" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="jYI-k8-f9Z">
-                                                                <rect key="frame" x="0.0" y="293.5" width="42.5" height="49"/>
+                                                                <rect key="frame" x="0.0" y="265.5" width="42.5" height="43.5"/>
                                                             </imageView>
                                                             <imageView userInteractionEnabled="NO" tag="49" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="Uyf-es-id7">
-                                                                <rect key="frame" x="0.0" y="352.5" width="42.5" height="48.5"/>
+                                                                <rect key="frame" x="0.0" y="319" width="42.5" height="43"/>
                                                             </imageView>
                                                         </subviews>
                                                         <color key="backgroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
@@ -252,8 +269,47 @@
                                     <constraint firstAttribute="bottom" secondItem="v44-U9-QqO" secondAttribute="bottom" constant="8" id="oWW-Si-nU9"/>
                                 </constraints>
                             </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ae-sz-FJb">
+                                <rect key="frame" x="0.0" y="592" width="375" height="75"/>
+                                <subviews>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgW-Zh-OmK">
+                                        <rect key="frame" x="50" y="15" width="100" height="45"/>
+                                        <color key="backgroundColor" red="1" green="0.70452242379999996" blue="0.19564350589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="100" id="m06-2r-hJQ"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="New Game"/>
+                                        <connections>
+                                            <action selector="NewGAme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JN2-RU-amE"/>
+                                        </connections>
+                                    </button>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="1Ua-2q-RLy">
+                                        <rect key="frame" x="255" y="15" width="70" height="45"/>
+                                        <color key="backgroundColor" red="1" green="0.70452242379999996" blue="0.19564350589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="70" id="pPs-DJ-XQo"/>
+                                        </constraints>
+                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                        <state key="normal" title="Moves"/>
+                                        <connections>
+                                            <action selector="moveOver:" destination="BYZ-38-t0r" eventType="touchUpInside" id="syM-YX-bu7"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.97751586759999998" blue="0.86293598169999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="dgW-Zh-OmK" firstAttribute="top" secondItem="6Ae-sz-FJb" secondAttribute="top" constant="15" id="4Zr-44-EhT"/>
+                                    <constraint firstAttribute="trailing" secondItem="1Ua-2q-RLy" secondAttribute="trailing" constant="50" id="5xE-gk-DLi"/>
+                                    <constraint firstItem="1Ua-2q-RLy" firstAttribute="top" secondItem="6Ae-sz-FJb" secondAttribute="top" constant="15" id="IY0-ms-tqR"/>
+                                    <constraint firstAttribute="bottom" secondItem="dgW-Zh-OmK" secondAttribute="bottom" constant="15" id="bws-Vy-dDU"/>
+                                    <constraint firstItem="dgW-Zh-OmK" firstAttribute="leading" secondItem="6Ae-sz-FJb" secondAttribute="leading" constant="50" id="dhU-dX-nHH"/>
+                                    <constraint firstAttribute="bottom" secondItem="1Ua-2q-RLy" secondAttribute="bottom" constant="15" id="g95-KG-N9M"/>
+                                    <constraint firstAttribute="height" constant="75" id="oQu-gf-Miv"/>
+                                </constraints>
+                            </view>
                             <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="vDJ-Ft-eTa">
-                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <rect key="frame" x="0.0" y="64" width="375" height="150"/>
                                 <subviews>
                                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="Player 1:" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="hAw-qQ-Wkt">
                                         <rect key="frame" x="30" y="36" width="64" height="21"/>
@@ -340,58 +396,61 @@
                                         <nil key="highlightedColor"/>
                                     </label>
                                     <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" alignment="center" spacing="10" translatesAutoresizingMaskIntoConstraints="NO" id="4HM-KF-Dp2">
-                                        <rect key="frame" x="10" y="120" width="355" height="30"/>
+                                        <rect key="frame" x="0.0" y="120" width="375" height="30"/>
                                         <subviews>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Rfa-B1-9fD">
-                                                <rect key="frame" x="0.0" y="0.0" width="42" height="30"/>
+                                                <rect key="frame" x="0.0" y="0.0" width="45" height="30"/>
                                                 <state key="normal" title="[+]"/>
                                                 <connections>
                                                     <action selector="col0:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BjP-Uo-YSd"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cuf-x9-hze">
-                                                <rect key="frame" x="52" y="0.0" width="42.5" height="30"/>
+                                                <rect key="frame" x="55" y="0.0" width="45" height="30"/>
                                                 <state key="normal" title="[+]"/>
                                                 <connections>
                                                     <action selector="col1:" destination="BYZ-38-t0r" eventType="touchUpInside" id="5zT-vm-F7Y"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="MQL-vq-FK7">
-                                                <rect key="frame" x="104.5" y="0.0" width="42" height="30"/>
+                                                <rect key="frame" x="110" y="0.0" width="45" height="30"/>
                                                 <state key="normal" title="[+]"/>
                                                 <connections>
                                                     <action selector="col2:" destination="BYZ-38-t0r" eventType="touchUpInside" id="LTP-jg-Tk5"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="UHa-Mh-Fkf">
-                                                <rect key="frame" x="156.5" y="0.0" width="42" height="30"/>
+                                                <rect key="frame" x="165" y="0.0" width="45" height="30"/>
                                                 <state key="normal" title="[+]"/>
                                                 <connections>
                                                     <action selector="col3:" destination="BYZ-38-t0r" eventType="touchUpInside" id="cxA-Cm-6p4"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="5dU-jA-TKs">
-                                                <rect key="frame" x="208.5" y="0.0" width="42" height="30"/>
+                                                <rect key="frame" x="220" y="0.0" width="45" height="30"/>
                                                 <state key="normal" title="[+]"/>
                                                 <connections>
                                                     <action selector="col4:" destination="BYZ-38-t0r" eventType="touchUpInside" id="TI8-A3-WWw"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="25y-ga-x8w">
-                                                <rect key="frame" x="260.5" y="0.0" width="42.5" height="30"/>
+                                                <rect key="frame" x="275" y="0.0" width="45" height="30"/>
                                                 <state key="normal" title="[+]"/>
                                                 <connections>
                                                     <action selector="col5:" destination="BYZ-38-t0r" eventType="touchUpInside" id="BpJ-bK-Jwf"/>
                                                 </connections>
                                             </button>
                                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="p7g-zU-tR5">
-                                                <rect key="frame" x="313" y="0.0" width="42" height="30"/>
+                                                <rect key="frame" x="330" y="0.0" width="45" height="30"/>
                                                 <state key="normal" title="[+]"/>
                                                 <connections>
                                                     <action selector="col6:" destination="BYZ-38-t0r" eventType="touchUpInside" id="lT7-oD-2xf"/>
                                                 </connections>
                                             </button>
                                         </subviews>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="30" id="WbD-rn-Tq0"/>
+                                        </constraints>
                                     </stackView>
                                     <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="Tq8-77-nrx">
                                         <rect key="frame" x="303" y="38" width="50" height="50"/>
@@ -400,54 +459,29 @@
                                 </subviews>
                                 <color key="backgroundColor" red="1" green="0.97751586761817166" blue="0.8629359816638128" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                                 <constraints>
-                                    <constraint firstAttribute="trailing" secondItem="4HM-KF-Dp2" secondAttribute="trailing" constant="10" id="6qZ-t9-Set"/>
-                                    <constraint firstItem="4HM-KF-Dp2" firstAttribute="leading" secondItem="vDJ-Ft-eTa" secondAttribute="leading" constant="10" id="HyI-q9-Z62"/>
-                                    <constraint firstAttribute="bottom" secondItem="4HM-KF-Dp2" secondAttribute="bottom" id="dUV-dH-016"/>
-                                    <constraint firstAttribute="height" constant="150" id="oB2-ag-mzg"/>
-                                </constraints>
-                            </view>
-                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="6Ae-sz-FJb">
-                                <rect key="frame" x="0.0" y="567" width="375" height="100"/>
-                                <subviews>
-                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dgW-Zh-OmK">
-                                        <rect key="frame" x="150" y="25" width="75" height="50"/>
-                                        <color key="backgroundColor" red="1" green="0.70452242379999996" blue="0.19564350589999999" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <constraints>
-                                            <constraint firstAttribute="height" constant="50" id="2X4-uC-4bH"/>
-                                            <constraint firstAttribute="width" relation="greaterThanOrEqual" constant="44" id="dUR-Eu-fck"/>
-                                        </constraints>
-                                        <color key="tintColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                        <state key="normal" title="New Game"/>
-                                        <connections>
-                                            <action selector="NewGAme:" destination="BYZ-38-t0r" eventType="touchUpInside" id="JN2-RU-amE"/>
-                                        </connections>
-                                    </button>
-                                </subviews>
-                                <color key="backgroundColor" red="1" green="0.97751586759999998" blue="0.86293598169999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
-                                <constraints>
-                                    <constraint firstAttribute="height" constant="100" id="H9F-Av-3zD"/>
-                                    <constraint firstItem="dgW-Zh-OmK" firstAttribute="centerX" secondItem="6Ae-sz-FJb" secondAttribute="centerX" id="JEg-7n-BbU"/>
-                                    <constraint firstItem="dgW-Zh-OmK" firstAttribute="centerY" secondItem="6Ae-sz-FJb" secondAttribute="centerY" id="OPI-ol-x70"/>
+                                    <constraint firstAttribute="trailing" secondItem="4HM-KF-Dp2" secondAttribute="trailing" id="Kpy-RB-4bd"/>
+                                    <constraint firstItem="4HM-KF-Dp2" firstAttribute="leading" secondItem="vDJ-Ft-eTa" secondAttribute="leading" id="LB0-hz-F0V"/>
+                                    <constraint firstAttribute="bottom" secondItem="4HM-KF-Dp2" secondAttribute="bottom" id="SRN-7c-eKk"/>
+                                    <constraint firstAttribute="height" constant="150" id="liJ-EF-KOp"/>
                                 </constraints>
                             </view>
                         </subviews>
                         <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
                         <constraints>
-                            <constraint firstItem="uCQ-b5-E1s" firstAttribute="top" secondItem="vDJ-Ft-eTa" secondAttribute="bottom" id="0v2-gh-smH"/>
-                            <constraint firstItem="6Ae-sz-FJb" firstAttribute="top" secondItem="uCQ-b5-E1s" secondAttribute="bottom" id="2SZ-wk-aDQ"/>
-                            <constraint firstItem="uCQ-b5-E1s" firstAttribute="top" secondItem="vDJ-Ft-eTa" secondAttribute="bottom" id="NlP-Zd-2lv"/>
-                            <constraint firstItem="vDJ-Ft-eTa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="S2V-pH-nwO"/>
+                            <constraint firstItem="uCQ-b5-E1s" firstAttribute="top" secondItem="vDJ-Ft-eTa" secondAttribute="bottom" id="1VG-2L-zcT"/>
+                            <constraint firstItem="6Ae-sz-FJb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="2jt-ka-Whg"/>
+                            <constraint firstItem="vDJ-Ft-eTa" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" id="6rA-vO-5cD"/>
+                            <constraint firstItem="vDJ-Ft-eTa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="Lsk-ua-VPU"/>
                             <constraint firstItem="uCQ-b5-E1s" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="X7Q-lh-QI3"/>
-                            <constraint firstItem="6Ae-sz-FJb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="bpk-80-76l"/>
-                            <constraint firstItem="6Ae-sz-FJb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="krg-4m-5Um"/>
-                            <constraint firstItem="6Ae-sz-FJb" firstAttribute="bottom" secondItem="6Tk-OE-BBY" secondAttribute="bottom" id="np3-Qj-oLl"/>
-                            <constraint firstItem="vDJ-Ft-eTa" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="pg7-Aa-NE3"/>
-                            <constraint firstItem="6Ae-sz-FJb" firstAttribute="top" secondItem="uCQ-b5-E1s" secondAttribute="bottom" id="sKg-JG-eOx"/>
+                            <constraint firstItem="vDJ-Ft-eTa" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="hRd-UW-dd7"/>
+                            <constraint firstItem="6Ae-sz-FJb" firstAttribute="trailing" secondItem="6Tk-OE-BBY" secondAttribute="trailing" id="myq-mf-tnx"/>
                             <constraint firstItem="uCQ-b5-E1s" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="sV7-jq-Ruv"/>
-                            <constraint firstItem="vDJ-Ft-eTa" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" id="ytP-qY-36f"/>
+                            <constraint firstItem="6Ae-sz-FJb" firstAttribute="top" secondItem="uCQ-b5-E1s" secondAttribute="bottom" id="uFy-xQ-IY0"/>
+                            <constraint firstItem="6Ae-sz-FJb" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="wtJ-ge-QWe"/>
                         </constraints>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                     </view>
+                    <navigationItem key="navigationItem" id="t73-Hf-LWm"/>
                     <connections>
                         <outlet property="colm0" destination="Rfa-B1-9fD" id="bVG-dH-5Zb"/>
                         <outlet property="colm1" destination="Cuf-x9-hze" id="1pN-2V-m5Z"/>
@@ -511,11 +545,97 @@
                         <outletCollection property="coins" destination="Kbc-BE-2Js" collectionClass="NSMutableArray" id="mh7-Nk-wsX"/>
                         <outletCollection property="coins" destination="jYI-k8-f9Z" collectionClass="NSMutableArray" id="ZWV-iU-WqU"/>
                         <outletCollection property="coins" destination="Uyf-es-id7" collectionClass="NSMutableArray" id="auu-Ou-GRS"/>
+                        <segue destination="jhA-f0-5lq" kind="show" identifier="pushToMoves" id="JSf-bn-tha"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="136.80000000000001" y="131.78410794602701"/>
+            <point key="canvasLocation" x="139" y="115"/>
+        </scene>
+        <!--Move List-->
+        <scene sceneID="fKk-aT-yrd">
+            <objects>
+                <viewController title="Move List" id="jhA-f0-5lq" customClass="SubViewController" customModule="ConnectFour" customModuleProvider="target" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="FdJ-Yq-tEE">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="100" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="zOm-yf-4Pa">
+                                <rect key="frame" x="0.0" y="214" width="375" height="453"/>
+                                <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <prototypes>
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="justCells" rowHeight="100" id="alz-q1-Yeo" customClass="customCell" customModule="ConnectFour" customModuleProvider="target">
+                                        <rect key="frame" x="0.0" y="28" width="375" height="100"/>
+                                        <autoresizingMask key="autoresizingMask"/>
+                                        <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="alz-q1-Yeo" id="lfV-lR-qbh">
+                                            <rect key="frame" x="0.0" y="0.0" width="375" height="99.5"/>
+                                            <autoresizingMask key="autoresizingMask"/>
+                                            <subviews>
+                                                <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" editable="NO" textAlignment="center" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ks8-Ld-Rbh">
+                                                    <rect key="frame" x="25" y="21" width="345" height="78"/>
+                                                    <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                </textView>
+                                            </subviews>
+                                            <constraints>
+                                                <constraint firstItem="ks8-Ld-Rbh" firstAttribute="trailing" secondItem="lfV-lR-qbh" secondAttribute="trailingMargin" constant="10" id="KCV-ys-Ar6"/>
+                                                <constraint firstItem="ks8-Ld-Rbh" firstAttribute="top" secondItem="lfV-lR-qbh" secondAttribute="topMargin" constant="10" id="fu0-eg-tJh"/>
+                                                <constraint firstItem="ks8-Ld-Rbh" firstAttribute="bottom" secondItem="lfV-lR-qbh" secondAttribute="bottomMargin" constant="10" id="ueh-sg-R1P"/>
+                                                <constraint firstItem="ks8-Ld-Rbh" firstAttribute="leading" secondItem="lfV-lR-qbh" secondAttribute="leadingMargin" constant="10" id="vnF-9J-VMi"/>
+                                            </constraints>
+                                        </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="texting" destination="ks8-Ld-Rbh" id="niz-Q9-D6m"/>
+                                        </connections>
+                                    </tableViewCell>
+                                </prototypes>
+                                <connections>
+                                    <outlet property="dataSource" destination="jhA-f0-5lq" id="LaL-zW-Pdf"/>
+                                    <outlet property="delegate" destination="jhA-f0-5lq" id="vy6-pb-LTn"/>
+                                </connections>
+                            </tableView>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="wK8-ZY-7YH">
+                                <rect key="frame" x="0.0" y="64" width="375" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Check out these awesome plays" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="oPZ-Ky-7aX">
+                                        <rect key="frame" x="64" y="65" width="246" height="21"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="246" id="BEM-IA-Dal"/>
+                                            <constraint firstAttribute="height" constant="21" id="ZUv-Qd-L2m"/>
+                                        </constraints>
+                                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.97751586759999998" blue="0.86293598169999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="150" id="ZH0-89-FA2"/>
+                                    <constraint firstItem="oPZ-Ky-7aX" firstAttribute="centerY" secondItem="wK8-ZY-7YH" secondAttribute="centerY" id="nAo-O1-CVt"/>
+                                    <constraint firstItem="oPZ-Ky-7aX" firstAttribute="centerX" secondItem="wK8-ZY-7YH" secondAttribute="centerX" id="vOy-qs-0uw"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="zOm-yf-4Pa" firstAttribute="trailing" secondItem="U5V-qb-UHm" secondAttribute="trailing" id="9IF-bI-FMI"/>
+                            <constraint firstItem="wK8-ZY-7YH" firstAttribute="trailing" secondItem="U5V-qb-UHm" secondAttribute="trailing" id="AHK-7O-ktF"/>
+                            <constraint firstItem="wK8-ZY-7YH" firstAttribute="top" secondItem="U5V-qb-UHm" secondAttribute="top" id="Myr-oe-Tm3"/>
+                            <constraint firstItem="zOm-yf-4Pa" firstAttribute="bottom" secondItem="U5V-qb-UHm" secondAttribute="bottom" id="OYL-jV-1Z6"/>
+                            <constraint firstItem="zOm-yf-4Pa" firstAttribute="top" secondItem="wK8-ZY-7YH" secondAttribute="bottom" id="R1f-gO-cel"/>
+                            <constraint firstItem="wK8-ZY-7YH" firstAttribute="leading" secondItem="U5V-qb-UHm" secondAttribute="leading" id="UcA-EK-Nq1"/>
+                            <constraint firstItem="zOm-yf-4Pa" firstAttribute="leading" secondItem="U5V-qb-UHm" secondAttribute="leading" id="fXB-qB-1gk"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="U5V-qb-UHm"/>
+                    </view>
+                    <connections>
+                        <outlet property="table" destination="zOm-yf-4Pa" id="xl4-5a-swN"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="3Dx-UG-PLx" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="1180" y="114.69265367316342"/>
         </scene>
     </scenes>
     <resources>

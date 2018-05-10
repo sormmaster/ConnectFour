@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		FC0F45B020A4BB19000A948E /* SubViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FC0F45AF20A4BB19000A948E /* SubViewController.swift */; };
 		FCEB1F9C20A3BE3C0076177E /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB1F9B20A3BE3C0076177E /* AppDelegate.swift */; };
 		FCEB1F9E20A3BE3C0076177E /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FCEB1F9D20A3BE3C0076177E /* ViewController.swift */; };
 		FCEB1FA120A3BE3C0076177E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FCEB1F9F20A3BE3C0076177E /* Main.storyboard */; };
@@ -20,6 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		FC0F45AF20A4BB19000A948E /* SubViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubViewController.swift; sourceTree = "<group>"; };
 		FCEB1F9820A3BE3C0076177E /* ConnectFour.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ConnectFour.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		FCEB1F9B20A3BE3C0076177E /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FCEB1F9D20A3BE3C0076177E /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
@@ -75,6 +77,7 @@
 				FCEB1FAA20A3BE3C0076177E /* Info.plist */,
 				FCEB1FA220A3BE3C0076177E /* ConnectFour.xcdatamodeld */,
 				FCEB1FB020A3C57D0076177E /* MainViewController.swift */,
+				FC0F45AF20A4BB19000A948E /* SubViewController.swift */,
 			);
 			path = ConnectFour;
 			sourceTree = "<group>";
@@ -156,6 +159,7 @@
 			files = (
 				FCEB1F9E20A3BE3C0076177E /* ViewController.swift in Sources */,
 				FCEB1F9C20A3BE3C0076177E /* AppDelegate.swift in Sources */,
+				FC0F45B020A4BB19000A948E /* SubViewController.swift in Sources */,
 				FCEB1FA420A3BE3C0076177E /* ConnectFour.xcdatamodeld in Sources */,
 				FCEB1FB120A3C57D0076177E /* MainViewController.swift in Sources */,
 			);

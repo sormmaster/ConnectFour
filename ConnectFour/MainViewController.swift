@@ -21,7 +21,7 @@ class MainViewController: UIViewController {
     var greenLoss: Int = 0
     var winner: Bool = false
     var actualGameCounter: Int = 0
-    
+    var moveList: [String] = ["Start of Game"]
     
     // --- colm code --
     @IBAction func col0(_ sender: Any) {
@@ -130,7 +130,11 @@ class MainViewController: UIViewController {
     
     // wining functions
     func didWin(place: Int, colmn: Int){
-    
+        let x1st = ("move: " + gameCounter.text!)
+        let x2nd = (" player: " + turn)
+        let x3rd = (" placed coin at x: " + String(place / 7 ))
+        let x4th = (" y:" + String(place % 7))
+        moveList.append(x1st + x2nd + x3rd + x4th)
         if(colmnCheck(colm: colmn) || rowCheck(place: place) || forwardDiagonalCheck(place: place) || backwardDiagonalCheck(place: place)){
             win()
         }
@@ -345,6 +349,20 @@ class MainViewController: UIViewController {
             rest(coin: coin)
         }
         colorSwap(color: .red)
+        moveList = ["Start of Game"]
+    }
+    
+    
+    @IBAction func moveOver(_ sender: Any) {
+        performSegue(withIdentifier: "pushToMoves", sender: Any.self)
+    }
+    
+    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+        if(segue.identifier == "pushToMoves"){
+            let seg = segue.destination as! SubViewController
+            seg.moveList = self.moveList
+            
+        }
         
     }
 }
