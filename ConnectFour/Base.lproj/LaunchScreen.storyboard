@@ -1,0 +1,77 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13771" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" launchScreen="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="01J-lp-oVM">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13772"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="EHf-IW-A2E">
+            <objects>
+                <viewController id="01J-lp-oVM" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="Ze5-6b-2t3">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="pdo-Ma-5dD">
+                                <rect key="frame" x="0.0" y="0.0" width="375" height="150"/>
+                                <subviews>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Connect four" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Z0d-xc-5oR">
+                                        <rect key="frame" x="104" y="57" width="167.5" height="36"/>
+                                        <fontDescription key="fontDescription" type="system" pointSize="30"/>
+                                        <nil key="textColor"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                </subviews>
+                                <color key="backgroundColor" red="1" green="0.97751586759999998" blue="0.86293598169999997" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="Z0d-xc-5oR" firstAttribute="centerX" secondItem="pdo-Ma-5dD" secondAttribute="centerX" id="Enz-Oi-rQ6"/>
+                                    <constraint firstItem="Z0d-xc-5oR" firstAttribute="centerY" secondItem="pdo-Ma-5dD" secondAttribute="centerY" id="V3N-KW-rCJ"/>
+                                    <constraint firstAttribute="height" constant="150" id="X12-gr-rh3"/>
+                                </constraints>
+                            </view>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="7Dz-ni-7Wj">
+                                <rect key="frame" x="0.0" y="150" width="375" height="517"/>
+                                <subviews>
+                                    <imageView userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="blankCoin.png" translatesAutoresizingMaskIntoConstraints="NO" id="L4I-iV-X7v">
+                                        <rect key="frame" x="97.5" y="174.5" width="180" height="168"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="168" id="4IP-zL-962"/>
+                                            <constraint firstAttribute="width" constant="180" id="JCN-5D-7Gi"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.0" green="0.47843137250000001" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstItem="L4I-iV-X7v" firstAttribute="centerX" secondItem="7Dz-ni-7Wj" secondAttribute="centerX" id="AbP-c4-HaH"/>
+                                    <constraint firstItem="L4I-iV-X7v" firstAttribute="centerY" secondItem="7Dz-ni-7Wj" secondAttribute="centerY" id="Hg2-KQ-mSy"/>
+                                </constraints>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="7Dz-ni-7Wj" secondAttribute="bottom" id="2qj-mO-hrV"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="7Dz-ni-7Wj" secondAttribute="trailing" id="2rZ-nx-ZYB"/>
+                            <constraint firstItem="pdo-Ma-5dD" firstAttribute="top" secondItem="Ze5-6b-2t3" secondAttribute="top" id="DpK-Lg-FE2"/>
+                            <constraint firstItem="7Dz-ni-7Wj" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="VSA-Xr-IVR"/>
+                            <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="pdo-Ma-5dD" secondAttribute="trailing" id="YGh-7O-tyr"/>
+                            <constraint firstItem="pdo-Ma-5dD" firstAttribute="leading" secondItem="6Tk-OE-BBY" secondAttribute="leading" id="Z4h-R1-Qyd"/>
+                            <constraint firstItem="7Dz-ni-7Wj" firstAttribute="top" secondItem="pdo-Ma-5dD" secondAttribute="bottom" id="tvU-iB-uZs"/>
+                        </constraints>
+                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                    </view>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iYj-Kq-Ea1" userLabel="First Responder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="52" y="374.66266866566718"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blankCoin.png" width="45" height="42"/>
+    </resources>
+</document>
