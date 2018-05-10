@@ -177,7 +177,7 @@ class MainViewController: UIViewController {
             start = ((place - (1 * x) ) % 7)
             }
             if(y % 7 != 6){
-            end = ((place + ((6 - y) * 7)))
+            end = ((place + ((6 - y) * 8)))
             } else {
                 end = place
             }
@@ -213,12 +213,18 @@ class MainViewController: UIViewController {
                 start = place
             }else if( y == 0){
                 start = place
+            }else if (y == 6){
+                start = place
             }else{
           start = (place - ((x) * 6))
           end = (place + ((6 - x) * 6))
             }
         }else if (y < x){
-          start = (place - ((x - y) * 6))
+            if(y > 0){
+          start = (place - ((x - y + 1) * 6))
+            } else{
+               start = (place - ((x - y) * 6))
+            }
             if(x == 6 || y == 0){
                 end = place
             }else{
