@@ -2,7 +2,7 @@
 //  ViewController.swift
 //  ConnectFour
 //
-//  Created by Dylan Westfall on 5/9/18.
+//  Created by Dylan Westfall on 4/9/18.
 //  Copyright © 2018 Dylan Westfall. All rights reserved.
 //
 

@@ -2,14 +2,14 @@
 //  MainViewController.swift
 //  ConnectFour
 //
-//  Created by Dylan Westfall on 5/9/18.
+//  Created by Dylan Westfall and Michael Horning on 4/9/18.
 //  Copyright © 2018 Dylan Westfall. All rights reserved.
 //
 
 import UIKit
 
 class MainViewController: UIViewController {
-
+    
     // -- basic vars and wins variables --
     @IBOutlet var coins: [UIImageView]!
     
@@ -73,15 +73,15 @@ class MainViewController: UIViewController {
     @IBOutlet weak var loseGreen: UILabel!
     
     @IBOutlet weak var gameCounter: UILabel!
-   
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         reset()
-
+        
         // Do any additional setup after loading the view.
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
@@ -91,13 +91,13 @@ class MainViewController: UIViewController {
     // placement based code
     func placing(place: Int){
         
-            if(!winner){
-                drop(place: (place * 7))
+        if(!winner){
+            drop(place: (place * 7))
         }
         
     }
     
-   
+    
     
     // checking and validation methods
     func drop(place: Int){
@@ -124,7 +124,7 @@ class MainViewController: UIViewController {
         gameCounter.text = String(actualGameCounter)
         didWin(place: num, colmn: colmn)
         if(!winner){
-        switchTurns()
+            switchTurns()
         }
     }
     
@@ -174,17 +174,17 @@ class MainViewController: UIViewController {
             if(x == 0 || y == 0){
                 start = place
             }else {
-            start = ((place - (1 * x) ) % 7)
+                start = ((place - (1 * x) ) % 7)
             }
             if(y % 7 != 6){
-            end = ((place + ((6 - y) * 8)))
+                end = ((place + ((6 - y) * 8)))
             } else {
                 end = place
             }
-            }else if (x > y){
+        }else if (x > y){
             start = (place - (y * 8) )
             if( x < 6){
-            end = (place + ((6 - x) * 8))
+                end = (place + ((6 - x) * 8))
             } else{
                 end = place
             }
@@ -197,7 +197,7 @@ class MainViewController: UIViewController {
             arm.append(start)
             start = start + 8
         }
-
+        
         
         return checkRows(arCheck: arm)
     }
@@ -216,23 +216,23 @@ class MainViewController: UIViewController {
             }else if (y == 6){
                 start = place
             }else{
-          start = (place - ((x) * 6))
-          end = (place + ((6 - x) * 6))
+                start = (place - ((x) * 6))
+                end = (place + ((6 - x) * 6))
             }
         }else if (y < x){
             if(y > 0){
-          start = (place - ((x - y + 1) * 6))
+                start = (place - ((x - y + 1) * 6))
             } else{
-               start = (place - ((x - y) * 6))
+                start = (place - ((x - y) * 6))
             }
             if(x == 6 || y == 0){
                 end = place
             }else{
-          end = (place + ((6 - x) * 6))
+                end = (place + ((6 - x) * 6))
             }
         } else{
             if(x == 0){
-            return false
+                return false
             }else if(x == 1){
                 return false
             }else if(x == 2){
@@ -255,7 +255,7 @@ class MainViewController: UIViewController {
             arm.append(start)
             start = start + 6
         }
-
+        
         return checkRows(arCheck: arm)
     }
     
@@ -310,25 +310,25 @@ class MainViewController: UIViewController {
     // end of turn methods
     
     func switchTurns(){
-    if(turn == "red"){
-        turn = "green"
-        turnShower.image = #imageLiteral(resourceName: "DQmSz68gJwYfsnnfLbjgeHABETm9QF4gnwkfKLTVwwn8SCg_1680x8400.png")
-        colorSwap(color: #colorLiteral(red: 0, green: 0.3411764706, blue: 0, alpha: 1))
-    }else{
-        turn = "red"
-        turnShower.image = #imageLiteral(resourceName: "rc.png")
-        colorSwap(color: .red)
+        if(turn == "red"){
+            turn = "green"
+            turnShower.image = #imageLiteral(resourceName: "DQmSz68gJwYfsnnfLbjgeHABETm9QF4gnwkfKLTVwwn8SCg_1680x8400.png")
+            colorSwap(color: #colorLiteral(red: 0, green: 0.3404405382, blue: 0, alpha: 1))
+        }else{
+            turn = "red"
+            turnShower.image = #imageLiteral(resourceName: "rc.png")
+            colorSwap(color: .red)
         }
     }
     
     func colorSwap(color: UIColor){
-         colm0.tintColor = color
-         colm1.tintColor = color
-         colm2.tintColor = color
-         colm4.tintColor = color
-         colm5.tintColor = color
-         colm6.tintColor = color
-         colm7.tintColor = color
+        colm0.tintColor = color
+        colm1.tintColor = color
+        colm2.tintColor = color
+        colm4.tintColor = color
+        colm5.tintColor = color
+        colm6.tintColor = color
+        colm7.tintColor = color
     }
     
     // color changing coin methods
